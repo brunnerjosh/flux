@@ -27,6 +27,7 @@ function create(text) {
   // server-side storage.
   // Using the current timestamp + random number in place of a real id.
   var id = (+new Date() + Math.floor(Math.random() * 999999)).toString(36);
+  console.log("TODO ID: " + id)
   _todos[id] = {
     id: id,
     complete: false,
